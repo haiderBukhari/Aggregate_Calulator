@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("add.jpg");
+
+            font-family: algerian;
+            ;
+
+
+        }
+
+        #calculate {
+            background-color: rgb(0, 255, 183);
+        }
+
+        #style {}
+
+        .Haider {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            forced-color-adjust: red;
+            background: black;
+            font-size: 20%;
+            text-align: center;
+            font-size: medium;
+
+
+        }
+
+        #RED {}
+
+        #NONWHITE {
+            background-color: beige;
+            background: beige;
+            border-color: rgb(255, 72, 0);
+            border-style: double;
+        }
+
+        #non {
+            background-color: beige;
+            border-style: dotted;
+            border-color: chartreuse;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body">
+    <div id="style">
+        <div class="1st">
+            <table border="4" style="color:rgb(0, 0, 0);" id="NONWHITE">
+                <div>
+                    <tr>
+                        <td>
+                            <label for="Matric">Enter your Matric Examination Marks</label>
+                        </td>
+                        <td><input type="text" name="Matric" id="Matric" class="Haider" size="20px"
+                                placeholder="Matric Marks" style="color: red" ; title="Matric Examination Marks"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="FSc" id="RED">Enter your FSc Examination Marks</label></td>
+                        <td><input type="text" name="FSc" id="FSc" class="Haider" placeholder="FSc Marks" size="20px"
+                                style="color:#FF00FF" title="FSc Examination Marks"></td>
+                    </tr><br>
+                </div>
+                <div>
+                    <tr>
+                        <strong>
+                            <td><label for="NU">Enter your NU test Marks</label></td>
+                            <td><input type="text" name="NU" id="NU" class="Haider" placeholder="NU Test Marks"
+                                    size="20px" style="color: #00FFFF;" title="Nu test Marks"
+                                    style="font-family: algerian ; font-style: oblique;"></td>
+                        </strong>
+                    </tr>
+                </div>
+            </table>
+            <br><br>
+
+            <table align="center" style="top: 160px; left: 95px;" border="2" title="Haider" id="non">
+                <tr>
+                    <td><button id="calculate" onclick="haider()">Calculate Aggregate</button></td>
+
+                    <td><input type="text" name="" id="class" disabled style="border: 60px; "
+                            style="background-color: red;" style="color: red;" placeholder="Your Calculated aggregate ">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+        <script type="text/javascript">
+            function haider() {
+                const matric = document.getElementById("Matric").value
+                const FSc = document.getElementById("FSc").value
+                const NU = document.getElementById("NU").value
+                var Submits = (((matric * 100) / 1100) * 10 / 100 + ((FSc * 100) / 1100) * 40 / 100 + ((NU * 100) / 100) * 50 / 100);
+
+
+                document.getElementById("class").value = Submits;
+
+            }
+
+
+
+        </script>
+
+
+
+
+        </body>
+
+</html>
