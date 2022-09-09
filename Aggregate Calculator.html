@@ -8,19 +8,66 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url("add.jpg");
-
+            
             font-family: algerian;
-            ;
-
-
+            background-color: #00FFFF;
+            text-align: center;
+            justify-content: center;
+            
         }
+          
+     #Matric:hover{
+        background-color: rgb(0, 255, 183);
+        border-radius: 7px;
+        color: #FF00FF;
+        transition: ease-out 0.2s;
+        font-size: 20px;
+     }
+
+     #FSc:hover{
+        background-color: rgb(0, 255, 183);
+        border-radius: 7px;
+        color: #FF00FF;
+        transition: ease-out 0.2s;
+        font-size: 20px;
+     }
+     #NU:hover{
+        background-color: rgb(0, 255, 183);
+        border-radius: 7px;
+        color: #FF00FF;
+        transition: ease-out 0.2s;
+        font-size: 20px;
+     }
+#change{
+    font-size: 300%;
+}
+       
 
         #calculate {
             background-color: rgb(0, 255, 183);
+            
         }
 
-        #style {}
+        #calculate:hover{
+            background-color: blue;
+            color: #00FFFF;
+            font-size: 20px;
+            border-radius: 4px;
+            transition:ease-out 0.2s;
+            cursor: pointer;
+
+        }
+
+        #class{
+            font-size: 20px;
+            
+            color: rgb(0, 72, 255);
+            border-radius: 4px;
+            transition:ease-out 0.2s;
+            text-align: center;
+            padding-right: 50px;
+            border-color: black;
+        }
 
         .Haider {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,26 +81,28 @@
 
         }
 
-        #RED {}
-
         #NONWHITE {
             background-color: beige;
             background: beige;
             border-color: rgb(255, 72, 0);
             border-style: double;
+            margin-left: 100px;
         }
 
         #non {
+            
             background-color: beige;
             border-style: dotted;
             border-color: chartreuse;
-            position: fixed;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 510px;
         }
     </style>
 </head>
 
-<body">
-    <div id="style">
+<body id="Main">
+<div id="change">    <div id="style">
         <div class="1st">
             <table border="4" style="color:rgb(0, 0, 0);" id="NONWHITE">
                 <div>
@@ -84,8 +133,9 @@
                 </div>
             </table>
             <br><br>
-
-            <table align="center" style="top: 160px; left: 95px;" border="2" title="Haider" id="non">
+        </div>
+    </div>
+            <table align="center" style="top: 160px; left: 95px;" border="2" title="Calculate" id="non">
                 <tr>
                     <td><button id="calculate" onclick="haider()">Calculate Aggregate</button></td>
 
@@ -94,7 +144,7 @@
                     </td>
                 </tr>
             </table>
-        </div>
+       
 
 
 
