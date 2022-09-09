@@ -99,6 +99,21 @@
             margin-left: 510px;
         }
     </style>
+     <script type="text/javascript">
+        function haider() {
+            const matric = document.getElementById("Matric").value
+            const FSc = document.getElementById("FSc").value
+            const NU = document.getElementById("NU").value
+            var Submits = (((matric * 100) / 1100) * 10 / 100 + ((FSc * 100) / 1100) * 40 / 100 + ((NU * 100) / 100) * 50 / 100);
+
+
+            document.getElementById("class").value = Submits;
+
+        }
+
+
+
+    </script>
 </head>
 
 <body id="Main">
@@ -150,21 +165,7 @@
 
 
 
-        <script type="text/javascript">
-            function haider() {
-                const matric = document.getElementById("Matric").value
-                const FSc = document.getElementById("FSc").value
-                const NU = document.getElementById("NU").value
-                var Submits = (((matric * 100) / 1100) * 10 / 100 + ((FSc * 100) / 1100) * 40 / 100 + ((NU * 100) / 100) * 50 / 100);
-
-
-                document.getElementById("class").value = Submits;
-
-            }
-
-
-
-        </script>
+       
 
 
 
